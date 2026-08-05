@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: ReactNode }): JSX.E
       <body>
         <Navigation />
         <main>
-          <div className="container">{children}</div>
+          <div className="container-fluid" style={{ margin: "2%" }}>{children}</div>
         </main>
       </body>
     </html>

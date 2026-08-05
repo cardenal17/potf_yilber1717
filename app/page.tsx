@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { highlightProjects } from "../content/projects";
 import { recruiterPillars, targetSectors } from "../content/recruiter";
 import { siteData, profileFallback } from "../lib/site-data";
@@ -45,47 +46,85 @@ export default function HomePage(): JSX.Element {
   return (
     <>
       <section className="hero">
-        <div className="badge">Disponible para retos de alto impacto</div>
-        <h1>{name}</h1>
-        <p>{headline}</p>
-        <p>{summary}</p>
-        <div className="badges">
-          {specialties.filter(Boolean).map((specialty) => (
-            <span key={specialty} className="badge">
-              {specialty}
-            </span>
-          ))}
-        </div>
-        <div className="cta-row">
-          <Link className="btn btn-primary" href="/projects">
-            Ver proyectos
-          </Link>
-          <Link className="btn btn-ghost" href="/contact">
-            Agendar conversacion
-          </Link>
-        </div>
-        {links.length > 0 && (
-          <div className="cta-row">
-            {links.map((item) => (
-              <a key={item.url} className="btn btn-ghost" href={item.url}>
-                {item.label}
-              </a>
-            ))}
+        <div className="hero-content">
+          <div className="hero-left">
+            <h1>{name}</h1>
+
+          <div className="hero-text">
+            <p className="hero-role">{headline}</p>
+            <p className="hero-summary">{summary}</p>
           </div>
-        )}
-        <div className="metric-grid">
-          <article className="metric-card">
-            <strong>{years}+</strong>
-            <span>Anos liderando y construyendo software</span>
-          </article>
-          <article className="metric-card">
-            <strong>{activeProjects}</strong>
-            <span>Iniciativas de producto y automatizacion</span>
-          </article>
-          <article className="metric-card">
-            <strong>{targetSectors.length}</strong>
-            <span>Sectores empresariales impactados</span>
-          </article>
+
+            <div className="badges">
+              {specialties.filter(Boolean).map((specialty) => (
+                <span key={specialty} className="badge">
+                  {specialty}
+                </span>
+              ))}
+            </div>
+
+            <div className="cta-row">
+              <Link className="btn btn-primary" href="/projects">
+                Ver proyectos
+              </Link>
+
+              <Link className="btn btn-ghost" href="/contact">
+                Agendar conversación
+              </Link>
+            </div>
+
+            {links.length > 0 && (
+              <div className="cta-row">
+                {links.map((item) => (
+                  <a
+                    key={item.url}
+                    className="btn btn-ghost"
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            )}
+
+          
+          </div>
+
+          <div className="hero-right">
+             
+            <div className="hero-image">
+            <Image
+                className="hero-photo"
+                src="/images/profile-vector.webp"
+                alt={name}
+                width={520}
+                height={520}
+                priority
+              />
+            </div>
+            <div className="badge">
+              <span className="status-dot"></span>
+              Disponible para proyectos estratégicos y retos de alto impacto
+            </div>
+              <div className="metric-grid">
+              <article className="metric-card">
+                <strong>{years}+</strong>
+                <span>Años liderando y construyendo software</span>
+              </article>
+
+              <article className="metric-card">
+                <strong>{activeProjects}</strong>
+                <span>Iniciativas de producto y automatización</span>
+              </article>
+
+              <article className="metric-card">
+                <strong>{targetSectors.length}</strong>
+                <span>Sectores empresariales impactados</span>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 

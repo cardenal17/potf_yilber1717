@@ -2,3 +2,12 @@
 /node_modules
 /next
 .next
+.agents
+.claude
+.codegraph
+.codex
+.cursor
+.gemini
+.github
+.next
+/codegraph_skills
