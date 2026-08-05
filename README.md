@@ -1,4 +1,4 @@
-# Portafolio data-driven (optimizado para IA)
+# Portafolio data-driven
 
 Toda la informacion del perfil vive en archivos JSON dentro de `data/`.
 Los componentes del sitio deben leer solo esos archivos para evitar tokens innecesarios.
