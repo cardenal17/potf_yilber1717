@@ -4,6 +4,7 @@ export default function LabPage(): JSX.Element {
   return (
     <>
       <div className="section-head">
+        
         <h2>Laboratorio IA</h2>
         <p>Un espacio vivo para experimentar, medir y llevar ideas a produccion.</p>
       </div>

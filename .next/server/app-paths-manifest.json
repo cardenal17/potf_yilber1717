@@ -1,7 +1,15 @@
 {
-  "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/about/page": "app/about/page.js",
+  "/achievements/page": "app/achievements/page.js",
+  "/certifications/page": "app/certifications/page.js",
   "/blog/page": "app/blog/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/lab/page": "app/lab/page.js",
+  "/page": "app/page.js",
+  "/journey/page": "app/journey/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/projects/page": "app/projects/page.js",
-  "/achievements/page": "app/achievements/page.js"
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js"
 }
