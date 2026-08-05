@@ -1,0 +1,34 @@
+[
+  {
+    "company": "Gexterra SAS",
+    "title": "Lider de Desarrollo | Ingeniero Senior en Desarrollo de Software",
+    "location": "Bucaramanga, Colombia",
+    "startDate": "2022-11",
+    "endDate": "Actualidad",
+    "description": "Liderazgo tecnico de soluciones escalables, automatizacion de procesos, integraciones con servicios externos y evolucion del motor de procesos de KUYN."
+  },
+  {
+    "company": "Gexterra SAS",
+    "title": "Ingeniero Desarrollo de Software",
+    "location": "Bucaramanga, Colombia",
+    "startDate": "2020-02",
+    "endDate": "2022-11",
+    "description": "Diseno y desarrollo de sistemas robustos, integraciones empresariales y optimizacion de flujos operativos en sectores de finanzas, salud, renting y operaciones TI."
+  },
+  {
+    "company": "Zippytech SAS",
+    "title": "Ingeniero Desarrollo de Software",
+    "location": "Tachira, Venezuela",
+    "startDate": "2019-12",
+    "endDate": "2020-02",
+    "description": "Desarrollo de funcionalidades backend y frontend para plataformas empresariales orientadas a eficiencia operativa."
+  },
+  {
+    "company": "Zippytech SAS",
+    "title": "Lider de Testing | Analista y Monitoreo de datos",
+    "location": "Tachira, Venezuela",
+    "startDate": "2018-11",
+    "endDate": "2019-12",
+    "description": "Implementacion de pruebas, analitica operativa y monitoreo de datos para mejorar calidad de software y control de procesos."
+  }
+]

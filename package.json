@@ -1,0 +1,25 @@
+{
+  "name": "portafolio-data-driven",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "import:linkedin": "ts-node --esm scripts/import-linkedin.ts"
+  },
+  "dependencies": {
+    "next": "13.5.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Python",
+    "category": "Backend"
+  },
+  {
+    "name": "Java (Spring Boot)",
+    "category": "Backend"
+  },
+  {
+    "name": "Node.js",
+    "category": "Backend"
+  },
+  {
+    "name": "PHP",
+    "category": "Backend"
+  },
+  {
+    "name": "Angular",
+    "category": "Frontend"
+  },
+  {
+    "name": "BPMN / DMN",
+    "category": "Process Modeling"
+  },
+  {
+    "name": "n8n",
+    "category": "Automation"
+  },
+  {
+    "name": "Robot Framework",
+    "category": "RPA"
+  },
+  {
+    "name": "Arquitectura de Software",
+    "category": "Architecture"
+  },
+  {
+    "name": "DevOps y Testing Automatizado",
+    "category": "Quality"
+  }
+]

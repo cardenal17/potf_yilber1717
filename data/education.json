@@ -1,0 +1,18 @@
+[
+  {
+    "institution": "Instituto Universitario de Tecnologia Agroindustrial",
+    "degree": "Ingeniero en Informatica",
+    "fieldOfStudy": "Informatica",
+    "startDate": "2016",
+    "endDate": "2019",
+    "description": "Tachira, Venezuela"
+  },
+  {
+    "institution": "Instituto Universitario de Tecnologia Agroindustrial",
+    "degree": "Tecnico Superior Universitario (TSU) en Informatica",
+    "fieldOfStudy": "Informatica",
+    "startDate": "2013",
+    "endDate": "2016",
+    "description": "Tachira, Venezuela"
+  }
+]
