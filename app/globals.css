@@ -508,3 +508,76 @@ main {
     justify-content: flex-start;
   }
 }
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 22px;
+}
+
+.filter-chip {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-chip:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.filter-chip.active {
+  background: linear-gradient(130deg, var(--accent), var(--accent-2));
+  color: #041018;
+  border-color: transparent;
+}
+
+.status-badge {
+  background: rgba(82, 166, 255, 0.12);
+  border-color: rgba(82, 166, 255, 0.35);
+}
+
+.confidential-badge {
+  background: rgba(255, 122, 122, 0.1);
+  border-color: rgba(255, 122, 122, 0.35);
+  color: #ffb4b4;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.drive-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.drive-gallery-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.code-block {
+  background: #0d1522;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "Fira Code", "Consolas", monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #dbe8ff;
+}

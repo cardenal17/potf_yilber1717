@@ -3,6 +3,7 @@ import Image from "next/image";
 import { highlightProjects } from "../content/projects";
 import { recruiterPillars, targetSectors } from "../content/recruiter";
 import { siteData, profileFallback } from "../lib/site-data";
+import { resumeAssets } from "../content/resume";
 
 function getStartYear(value: string): number | null {
   const match = value.match(/\d{4}/);
@@ -71,6 +72,12 @@ export default function HomePage(): JSX.Element {
               <Link className="btn btn-ghost" href="/contact">
                 Agendar conversación
               </Link>
+
+              {resumeAssets[0] && (
+                <a className="btn btn-ghost" href={resumeAssets[0].file} download>
+                  Descargar CV
+                </a>
+              )}
             </div>
 
             {links.length > 0 && (

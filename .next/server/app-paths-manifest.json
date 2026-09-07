@@ -1,5 +1,20 @@
 {
-  "/not-found": "app/not-found.js",
+  "/_not-found": "app/_not-found.js",
+  "/about/page": "app/about/page.js",
+  "/achievements/page": "app/achievements/page.js",
+  "/certifications/page": "app/certifications/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/journey/page": "app/journey/page.js",
+  "/lab/page": "app/lab/page.js",
+  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
-  "/about/page": "app/about/page.js"
+  "/projects/page": "app/projects/page.js",
+  "/resume/page": "app/resume/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/scripts/page": "app/scripts/page.js",
+  "/api/drive/[folderId]/route": "app/api/drive/[folderId]/route.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
+  "/projects/[slug]/page": "app/projects/[slug]/page.js",
+  "/scripts/[slug]/page": "app/scripts/[slug]/page.js"
 }

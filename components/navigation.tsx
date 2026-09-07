@@ -5,10 +5,12 @@ const navItems = [
   { href: "/about", label: "Mi historia" },
   { href: "/achievements", label: "Logros" },
   { href: "/projects", label: "Proyectos" },
+  { href: "/scripts", label: "Scripts" },
   { href: "/journey", label: "Journey" },
   { href: "/lab", label: "Lab IA" },
   { href: "/certifications", label: "Certificaciones" },
   { href: "/blog", label: "Blog" },
+  { href: "/resume", label: "CV / Resume" },
   { href: "/contact", label: "Contacto" }
 ];
 
