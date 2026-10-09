@@ -22,9 +22,9 @@ export function ProjectGallery(): JSX.Element {
         ariaLabel="Filtrar proyectos por categoría"
       />
       {filtered.length === 0 ? (
-        <p className="muted">Aún no hay proyectos en esta categoría.</p>
+        <p className="ds-lead">Aún no hay proyectos en esta categoría.</p>
       ) : (
-        <section className="grid grid-3">
+        <section className="ds-bento ds-bento-3">
           {filtered.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
@@ -33,3 +33,4 @@ export function ProjectGallery(): JSX.Element {
     </>
   );
 }
+

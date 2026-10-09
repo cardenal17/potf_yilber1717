@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
+import { Button } from "../../components/ui/button";import { Chip } from "../../components/ui/bento";
 import { scriptCategories, scripts as allScripts } from "../../content/scripts-catalog";
 import { FilterChips } from "../../components/filter-chips";
 
@@ -14,11 +14,16 @@ export default function ScriptsPage(): JSX.Element {
   }, [activeCategory]);
 
   return (
-    <>
-      <div className="section-head">
-        <h2>Scripts</h2>
-        <p>Python, SQL Oracle, APIs, Laravel/Angular, n8n, RPA, DevOps e IA aplicados a problemas concretos.</p>
-      </div>
+    <div className="ds-page">
+      <section className="ds-hero ds-hero-single">
+        <div>
+          <span className="ds-eyebrow">Scripts</span>
+          <h1 className="ds-gradient-text">Utilidades que resuelven problemas concretos</h1>
+          <p className="ds-lead ds-lead-lg">
+            Python, SQL Oracle, APIs, Laravel/Angular, n8n, RPA, DevOps e IA aplicados.
+          </p>
+        </div>
+      </section>
       <FilterChips
         options={scriptCategories}
         active={activeCategory}
@@ -26,25 +31,21 @@ export default function ScriptsPage(): JSX.Element {
         ariaLabel="Filtrar scripts por categoría"
       />
       {filtered.length === 0 ? (
-        <p className="muted">Aún no hay scripts en esta categoría.</p>
+        <p className="ds-lead">Aún no hay scripts en esta categoría.</p>
       ) : (
-        <section className="grid grid-2">
-          {filtered.map((script) => (
-            <article className="card" key={script.slug}>
+        <div className="ds-bento">
+          {filtered.map((script, index) => (
+            <article className={`ds-cell ${index % 3 === 0 ? "ds-span-lg" : "ds-span-sm"}`} key={script.slug}>
+              <Chip>{script.language}</Chip>
               <h3>{script.title}</h3>
-              <p className="muted">{script.description}</p>
-              <div className="badges">
-                <span className="badge">{script.language}</span>
-              </div>
-              <div className="cta-row" style={{ marginTop: 12 }}>
-                <Link className="btn btn-primary" href={`/scripts/${script.slug}`}>
-                  Ver detalle
-                </Link>
+              <p>{script.description}</p>
+              <div className="ds-row">
+                <Button variant="primary" href={`/scripts/${script.slug}`}>Ver detalle</Button>
               </div>
             </article>
           ))}
-        </section>
+        </div>
       )}
-    </>
+    </div>
   );
 }

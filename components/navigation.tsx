@@ -4,6 +4,9 @@ const navItems = [
   { href: "/", label: "Inicio" },
   { href: "/about", label: "Mi historia" },
   { href: "/achievements", label: "Logros" },
+  { href: "/services", label: "Asesorías" },
+  { href: "/agents", label: "Agentes IA" },
+  { href: "/ecosystem", label: "Empresas" },
   { href: "/projects", label: "Proyectos" },
   { href: "/scripts", label: "Scripts" },
   { href: "/journey", label: "Journey" },
@@ -33,3 +36,6 @@ export function Navigation(): JSX.Element {
     </header>
   );
 }
+
+
+

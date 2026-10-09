@@ -1,18 +1,22 @@
 import Link from "next/link";
 import { ProjectGallery } from "../../components/project-gallery";
+import { SectionHeader } from "../../components/ui/bento";
 
 export default function ProjectsPage(): JSX.Element {
   return (
-    <>
-      <div className="section-head">
-        <h2>Developer Project Gallery / Engineering Lab</h2>
-        <p>Proyectos profesionales, personales, scripts, IA, data science, automatización y arquitectura.</p>
-      </div>
+    <div className="ds-page">
+      <section className="ds-hero ds-hero-single">
+        <div>
+          <span className="ds-eyebrow">Proyectos</span>
+          <h1 className="ds-gradient-text">Engineering Lab</h1>
+          <p className="ds-lead ds-lead-lg">
+            Proyectos profesionales, personales, scripts, IA, data science, automatización y arquitectura.
+          </p>
+        </div>
+      </section>
       <ProjectGallery />
-      <p className="muted" style={{ marginTop: 24 }}>
-        ¿Buscas utilidades técnicas puntuales? Revisa la sección{" "}
-        <Link href="/scripts">Scripts</Link>.
-      </p>
-    </>
+      <SectionHeader eyebrow="Más" title="¿Buscas utilidades técnicas puntuales?" lead="Revisa la sección de scripts." />
+      <p><Link className="ds-btn ds-btn-ghost" href="/scripts">Ir a Scripts</Link></p>
+    </div>
   );
 }
